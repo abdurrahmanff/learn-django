@@ -31,6 +31,7 @@ class Snippet(models.Model):
         "auth.User", related_name="snippets", on_delete=models.CASCADE
     )
     highlighted = models.TextField()
+    screenshot = models.ImageField(blank=True, null=True)
 
     class Meta:
         ordering = ["created"]
