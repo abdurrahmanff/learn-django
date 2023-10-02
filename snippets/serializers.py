@@ -21,6 +21,7 @@ class SnippetSerializer(serializers.HyperlinkedModelSerializer):
             "style",
             "owner",
             "highlight",
+            "screenshot",
         ]
 
 
